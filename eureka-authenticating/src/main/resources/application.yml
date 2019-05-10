@@ -1,0 +1,16 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: micorservice-eureka-authenticating
+  security:
+    user:
+      name: kuraki        # 登陆的账号
+      password: 123456    # 登录的密码
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:8762/eureka/
+
