@@ -3,7 +3,7 @@ server:
 spring:
   application:
     # 指定注册到eureka server上的服务名称，对于电影微服务，本系列将名称设为micorservice-consumer-movie
-    name: micorservice-consumer-movie
+    name: microservice-consumer-movie
 eureka:
   client:
     service-url:
