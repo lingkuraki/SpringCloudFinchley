@@ -22,3 +22,6 @@ management:
 zuul:
   routes:
     microservice-provider-user: /user/**
+    user2:
+      url: http://localhost:8000/
+      path: /user2/**
